@@ -62,6 +62,8 @@ public class GlobalExceptionHandler {
                 // existing : 기존값, replacement : 새로운 값
                 (existing, replacement) -> existing
             ));
+        log.debug("{}\n{}", "*** 유효성 체크 에러 ***", errors);
+
         return ResponseEntity
             .status(HttpStatus.BAD_REQUEST)
             .body(

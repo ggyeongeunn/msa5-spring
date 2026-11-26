@@ -11,7 +11,7 @@ logging:
   level:
     # 에러 레벨 조정
     # error > warn > info > debug > trace
-    root: warn
+    root: debug
     org.msa.msa5spring: debug
     # org.msa.msa5spring.controller: error
 debug: false
